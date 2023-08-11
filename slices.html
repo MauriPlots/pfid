@@ -1,0 +1,184 @@
+<html>
+	 <head>
+		 <style type="text/css">
+			 #indextable { 
+				 font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+				 border-collapse: collapse; 
+			 } 
+			 #indextable td { 
+				 border: 1px solid #ddd; 
+				 padding: 6px; 
+			 } 
+			 #indextable tr:nth-child(even){background-color: #f2f2f2;} 
+			 #indextable tr:hover {background-color: #ddd;}
+			 #indextable td:hover {background-color: #119; color: white;}
+			 .button { 
+			 background-color: white; 
+			 color: black; 
+			 border: 2px solid #555555; 
+			 border-radius: 10%; 
+			 padding: 16px 32px; 
+			 text-align: center; 
+			 text-decoration: none; 
+			 display: inline-block; 
+			 font-size: 16px; 
+			 margin: 4px 2px; 
+			 -webkit-transition-duration: 0.2s; 
+			 transition-duration: 0.4s; 
+			 cursor: pointer; 
+			 } 
+			 .button:hover { 
+			 background-color: #555555; 
+			 color: white; 
+			 } 
+		 </style>
+		 <script>
+			 function popPic() {picDisplayed = window.open(document.DIST.src, document.DIST.src,'statusbar=no, scrollbars=auto, status=no, resizable=no, width=1250, height=1250');}
+			 var plane = "DC1";
+			 function showPic(row, col)
+			 {
+			    var dist = "img_slices/"
+			    dist += "slice-"
+			    dist += row;
+			    dist += "_"
+			    dist += "sector-"
+			    dist += col;
+			    dist += "_plane-";
+			    dist += plane;
+			    dist += ".png"
+			    document.DIST.src = dist
+			 }
+			 function changeplane()
+			 {
+				 var planeTitle = "plane " ;
+				 planeTitle += plane;
+				 document.getElementById("planeButtons").innerHTML = planeTitle;
+			 }
+		 </script>
+	 </head>
+	 <body>
+		 <center>
+			 <table cellpadding=10> 
+				 <tr> 
+					 <td colspan=2> 
+						 <table> <tr>
+							 <td id="planeButtons" align=center colspan=4>plane DC1</td></tr><tr>
+							 <td><button class="button" onclick="javascript:plane='DC1' ; changeplane(); ">DC1</button></td>
+							 <td><button class="button" onclick="javascript:plane='DC2' ; changeplane(); ">DC2</button></td>
+							 <td><button class="button" onclick="javascript:plane='DC3' ; changeplane(); ">DC3</button></td>
+							 <td><button class="button" onclick="javascript:plane='SC' ; changeplane(); ">SC</button></td>
+						 </tr></table>
+					 </td> 
+				 </tr> 
+				 <tr> 
+					 <td> 
+						 <table id="indextable" class="indextable"> 
+							 <tr> 
+								 <td> <sub> slice</sub> <sup> sector</sup> </td>
+								 <td>1</td>
+								 <td>2</td>
+								 <td>3</td>
+								 <td>4</td>
+								 <td>5</td>
+								 <td>6</td>
+							 </tr> 
+							 <tr> 
+								 <td>03</td>
+								 <td onclick="popPic()" onmouseover="showPic('03', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('03', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('03', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('03', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('03', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('03', '6')" />
+							 </tr> 
+							 <tr> 
+								 <td>04</td>
+								 <td onclick="popPic()" onmouseover="showPic('04', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('04', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('04', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('04', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('04', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('04', '6')" />
+							 </tr> 
+							 <tr> 
+								 <td>05</td>
+								 <td onclick="popPic()" onmouseover="showPic('05', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('05', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('05', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('05', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('05', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('05', '6')" />
+							 </tr> 
+							 <tr> 
+								 <td>06</td>
+								 <td onclick="popPic()" onmouseover="showPic('06', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('06', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('06', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('06', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('06', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('06', '6')" />
+							 </tr> 
+							 <tr> 
+								 <td>07</td>
+								 <td onclick="popPic()" onmouseover="showPic('07', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('07', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('07', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('07', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('07', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('07', '6')" />
+							 </tr> 
+							 <tr> 
+								 <td>08</td>
+								 <td onclick="popPic()" onmouseover="showPic('08', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('08', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('08', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('08', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('08', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('08', '6')" />
+							 </tr> 
+							 <tr> 
+								 <td>09</td>
+								 <td onclick="popPic()" onmouseover="showPic('09', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('09', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('09', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('09', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('09', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('09', '6')" />
+							 </tr> 
+							 <tr> 
+								 <td>10</td>
+								 <td onclick="popPic()" onmouseover="showPic('10', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('10', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('10', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('10', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('10', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('10', '6')" />
+							 </tr> 
+							 <tr> 
+								 <td>11</td>
+								 <td onclick="popPic()" onmouseover="showPic('11', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('11', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('11', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('11', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('11', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('11', '6')" />
+							 </tr> 
+							 <tr> 
+								 <td>12</td>
+								 <td onclick="popPic()" onmouseover="showPic('12', '1')" />
+								 <td onclick="popPic()" onmouseover="showPic('12', '2')" />
+								 <td onclick="popPic()" onmouseover="showPic('12', '3')" />
+								 <td onclick="popPic()" onmouseover="showPic('12', '4')" />
+								 <td onclick="popPic()" onmouseover="showPic('12', '5')" />
+								 <td onclick="popPic()" onmouseover="showPic('12', '6')" />
+							 </tr> 
+						 </table> 
+					 </td> 
+					 <td> 
+						 <img name = "DIST" width="650px" src="img_slices/slice-03_sector-1_plane-DC1.png"/> 
+					 </td> 
+				 </tr> 
+			 </table> 
+		 </center>
+	 </body>
+</html>
